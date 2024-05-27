@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency convertor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+         <!-- boxicon link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+         <!-- remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>Currency Convertor</header>
+        <form>
+
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+
+
+            <div class="drop-list">
+
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <img id="fromImg" src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select id="from">
+
+                        </select>
+                    </div>
+                </div>
+                <div class="exchange-icon"><i class="ri-arrow-left-right-fill"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img id="toImg" src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+                        <select id="to">
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="amountDisplay"></div>
+            
+            <button >Get Exchange Rate</button>
+        </form>
+
+        <div class="navigator"><p>Misleading with country names and abbreviations? Click here to learn more.</p><a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="_blank">click me</a></div>
+    </div>
+
+
+    <script src="country-codes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
